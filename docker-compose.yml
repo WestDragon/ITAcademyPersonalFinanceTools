@@ -1,0 +1,13 @@
+name: finance
+
+services:
+  swagger:
+    build: swagger-ui
+    image: swagger-finance:1.0.0
+    ports:
+      - 81:8080
+    networks:
+      - finance-network
+
+networks:
+  finance-network:
