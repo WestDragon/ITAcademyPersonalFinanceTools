@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Finance DB",
+      "Group": "Servers",
+      "Port": 5432,
+      "Username": "finance_admin",
+      "Host": "pg_db",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "postgres",
+      "PassFile": "/pgpass"
+    }
+  }
+}

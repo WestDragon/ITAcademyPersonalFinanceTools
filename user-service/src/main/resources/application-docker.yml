@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://db:5432/user-service?currentSchema=security
-    password: root
-    username: root
+    url: jdbc:postgresql://db:5432/user-service?currentSchema=data
+    password: ${DB_USER}
+    username: ${DB_PASSWORD}
 
 app:
   user:
