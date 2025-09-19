@@ -10,7 +10,7 @@ services:
       - finance-network
   pg_db:
     build: postgresql
-    image: postgresql-finance:1.0.0
+    image: postgresql-finance:1.0.1
     environment:
       POSTGRES_USER: finance_admin
       POSTGRES_PASSWORD: 123
@@ -28,9 +28,10 @@ services:
       - finance-network
   user-service:
     build: user-service
-    image: user-service-finance:1.0.0
+    image: user-service-finance:1.0.4
     environment:
       SPRING_PROFILES_ACTIVE: docker
+      DB_URL: 'jdbc:postgresql://pg_db:5432/user_service?currentSchema=data'
       DB_USER: user_service_user
       DB_PASSWORD: 'ZF3w{&M1;1_\'
     networks:

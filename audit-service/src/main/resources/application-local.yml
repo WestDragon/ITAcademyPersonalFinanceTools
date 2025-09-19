@@ -1,6 +1,2 @@
 server:
-  port: 8080
-
-app:
-  jwt:
-    secret: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+  port: 8081
